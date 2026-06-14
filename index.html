@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Katlehong Engineering School</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katlehong Engineering School of Specialisation</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <h1>Katlehong Engineering School of Specialisation</h1>
-  <p>Engineering Tomorrow’s Leaders Today</p>
+<!-- HERO -->
+<header class="hero-header">
+  <div class="overlay">
+    <h1>Katlehong Engineering School of Specialisation</h1>
+    <p>Engineering Tomorrow’s Leaders Today</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      Explore More
+    </button>
+  </div>
 </header>
 
+<!-- NAV -->
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -20,22 +31,77 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-  <h2>Welcome</h2>
+<!-- ABOUT PREVIEW -->
+<section id="about">
+  <h2>About Our School</h2>
   <p>
-    We develop future engineers through innovation, technology, and practical learning.
+    Katlehong Engineering School of Specialisation is committed to producing
+    future engineers through practical learning, innovation, and academic excellence.
   </p>
 </section>
 
+<!-- HIGHLIGHTS -->
 <section class="grid">
-  <div class="card">Engineering Excellence</div>
-  <div class="card">Industry Partnerships</div>
-  <div class="card">Future Skills</div>
+
+  <div class="card">
+    <h3>⚙️ Engineering Excellence</h3>
+    <p>High-quality technical education focused on real-world skills.</p>
+  </div>
+
+  <div class="card">
+    <h3>🏭 Practical Learning</h3>
+    <p>Hands-on workshops and engineering labs for learners.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤝 Industry Partnerships</h3>
+    <p>Collaboration with industry leaders and sponsors.</p>
+  </div>
+
+  <div class="card">
+    <h3>🚀 Future Ready Skills</h3>
+    <p>Preparing learners for engineering careers and innovation.</p>
+  </div>
+
 </section>
 
+<!-- STATS / VALUE SECTION -->
+<section class="grid">
+
+  <div class="card">
+    <h3>Mathematics & Sciences</h3>
+    <p>Strong academic foundation for engineering pathways.</p>
+  </div>
+
+  <div class="card">
+    <h3>Technical Subjects</h3>
+    <p>EGD, Electrical, Mechanical, and Civil Technology.</p>
+  </div>
+
+  <div class="card">
+    <h3>Specialisation Streams</h3>
+    <p>Manufacturing, Logistics, Robotics, and CAD Design.</p>
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+<section style="text-align:center;">
+  <h2>Ready to Join the Future of Engineering?</h2>
+  <p>Explore our subjects and start your journey today.</p>
+  <button onclick="window.location.href='subjects.html'">
+    View Subjects
+  </button>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Katlehong Engineering School of Specialisation
+  © 2026 Katlehong Engineering School of Specialisation  
+  <br>
+  <small>This is the official school website.</small>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
